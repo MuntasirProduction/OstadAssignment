@@ -1,0 +1,46 @@
+1. What is the Feasibility Study of the SDLC model & why is this important?
+
+Answer: Feasibility Study is a step of Requirement Engineering. This step defines the vision and goal of a software. There are three types of feasibility. They are:
+Technical Feasibility, Operational Feasibility, and Economic Feasibility.
+
+        Feasibility Study is important because:
+          i. It clearly defines what is possible and what is not from technical point of view.
+          ii. In this step time and cost for the development of the software is determined.
+          iii. The profit the software will earn for a client is determined in this step.
+          
+ 2. Write 5 advantages of Agile methodology ?
+ 
+ Answer: Agile method is a type of method followed for the development of a Software. Five advantages of Agile methodology are defined below:
+ 
+    i. As big tasks are broken into smaller tasks it helps to create reusalbe components.
+    ii. During development period a client can see the development of different blocks of the software. It builds client's trust and confidence.
+    iii. During development phase if a developer leaves the project then a new skilled developer can grasp the tasks easily.
+    iv. Individual's strength in speicific field like backend, frontend, database can be properly utilized.
+    v. As requirments are placed at the very beginning if a major change is not needed then time and cost can be easily calculated.
+    
+ 3. Write short notes on SDLC model phase.
+ 
+ Answer: SDLC stands for "Software Development Lifecycle". Short notes on SDLC model phases are given below:
+ 
+  Planning and requirement analysis:
+    In this phase business is studied for which the software will be developed. Then the features and benefits of the software is determined. The time, cost, scope of the
+    software is determined.
+  
+  Defining Requirements:
+    In this phase the requirements are defined in data flow diagram. Data dictonaries are kept so that client and developer use the same terminologies.
+    
+  Designing the software:
+    A prototype of the software is designed.
+  
+  Developing the project:
+    The coding phase of the project is done.
+  
+  Testing:
+    The written code is tested for bugs and errors. Customer acceptancy is tested.
+  
+  Deployment:
+    The software is deployed in a server.
+  
+  Maintenance:
+    The software is checked time to time if it is working correctly. Also, new enhancement may be intorduced.
+  
