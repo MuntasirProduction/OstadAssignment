@@ -10,7 +10,6 @@ As a developer please help HF Consultancy for building this simple calculator us
 */
 
 $tuition = 6000;
-$comission = 0;
 
 
 $comission = $tuition < 7000 ? "Invalid" : ($tuition < 10000 && $tuition!=7000 ? $tuition * 0.15 : ($tuition < 20000 && $tuition!=10000 && $tuition!=7000 ? $tuition * 0.20 : ($tuition > 20000 ? $tuition * 0.25 : "Unknown")));
