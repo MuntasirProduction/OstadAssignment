@@ -88,6 +88,9 @@ if (isset($profilePicture) && !empty($profilePicture)) {
 
 
 $targetDir = "uploads/";
+if (!file_exists('uploads')){
+mkdir("uploads");
+}
 $fileName = uniqid() . "-" . date('Y-m-d_H-i-s') . "-" . basename($_FILES["profilePicture"]["name"]);
   $targetFile = $targetDir . $fileName;
   $uploadOk = 1;
