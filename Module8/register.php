@@ -10,6 +10,9 @@ $confirm_password = '';
 // Initialize variable for error messages
 $errors = [];
 
+// Initialize variable for success message
+$success_message = '';
+
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get form fields and sanitize input
@@ -41,8 +44,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // If there are no errors, process form data
     if (empty($errors)) {
 
-        echo '<h2>Registration successful!</h2>';
-        echo '<a href="./login.php">Go to Login Page</a>'
+        // Save user data to file
+        $user_data = implode(':', [$first_name, $last_name, $email, $password]);
+        $file = fopen('users.txt', 'a');
+        fwrite($file, $user_data . "\n");
+        fclose($file);
+
+        // Display success message
+        $success_message = 'Registration successful.';
+
     }
 }
 
@@ -64,7 +74,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <li><?= $error ?></li>
             <?php endforeach ?>
         </ul>
+    <?php elseif (!empty($success_message)) : ?>
+        <h2><?=  $success_message ?></h2>
     <?php endif ?>
+    
+    <a href="./login.php">Go to Login Page</a>;
+
+    <div style="height:26px"></div>
 
     <form method="POST">
         <label for="first_name">First Name:</label>
