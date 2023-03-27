@@ -40,10 +40,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // If there are no errors, process form data
     if (empty($errors)) {
-        // TODO: insert user data into database, redirect to success page, etc.
 
-        // For now, just display a success message
         echo '<h2>Registration successful!</h2>';
+        echo '<a href="./login.php">Go to Login Page</a>'
     }
 }
 
